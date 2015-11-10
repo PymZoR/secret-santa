@@ -1,0 +1,17 @@
+{
+    "name": "nashe/secret-santa",
+    "description": "Secret santa application, using etu.utt.fr's OAuth for authentication",
+    "require": {
+        "guzzlehttp/guzzle": "^6.1",
+        "phroute/phroute": "^2.1",
+        "vlucas/phpdotenv": "^2.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nashe",
+            "email": "thomas@chauchefoin.fr"
+        }
+    ],
+    "minimum-stability": "stable"
+}
