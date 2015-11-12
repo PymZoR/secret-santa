@@ -2,9 +2,11 @@
 
 $router->get('/', function () {
     if (isset($_SESSION['student'])) {
-        return 'Autenticated!';
+        require_once "views/home.php";
+        return str_replace("{{ studentInfo }}", json_encode($_SESSION['student']), $content);
     } else {
-        return 'Unauthenticated.';
+        require_once "views/connection.php";
+        return $content;
     }
 });
 
@@ -72,4 +74,8 @@ $router->get('/logout', function () {
     session_destroy();
 
     return header('Location: /');
+});
+
+$router->post('/submit', function () {
+    return 'It works';
 });

@@ -27,3 +27,5 @@ try {
 } catch (Phroute\Exception\HttpMethodNotAllowedException $e) {
     $response = 'Method not allowed.';
 }
+
+die($response);
